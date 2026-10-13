@@ -1,0 +1,194 @@
+:root {
+  --primary: #1c2a39;
+  --secondary: #b89b5e;
+  --light: #f5f5f5;
+  --dark: #111;
+  --gray: #6c757d;
+}
+
+/* HERO */
+.sobre-hero {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.sobre-hero h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sobre-hero p {
+  font-size: 1.1rem;
+  opacity: 0.75;
+}
+
+/* SEÇÕES */
+.sobre-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.sobre-section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  border-left: 4px solid var(--secondary);
+  padding-left: 0.75rem;
+}
+
+.sobre-section p {
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.sobre-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* VALORES */
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.valor-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.valor-card:hover {
+  transform: translateY(-4px);
+}
+
+.valor-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.valor-card h3 {
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.valor-card p {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin: 0;
+}
+
+/* EQUIPE */
+.advogado-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.advogado-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--secondary);
+  flex-shrink: 0;
+}
+
+.advogado-info h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.oab-badge {
+  display: inline-block;
+  background: #f0e8d6;
+  color: #7a5c28;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.advogado-info p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CTA */
+.sobre-cta {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.sobre-cta h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: var(--secondary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #a58545;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .sobre-hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .advogado-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
+}

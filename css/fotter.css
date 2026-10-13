@@ -1,0 +1,54 @@
+/*FOOTER*/
+
+footer {
+  background: #111;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+footer section {
+  margin-bottom: 2rem;
+}
+
+footer p,
+footer li {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary);
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.img {
+  width: 24px;
+  height: 24px;
+}
