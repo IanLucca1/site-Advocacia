@@ -15,7 +15,6 @@
 
 body {
   background: var(--light);
-  padding-top: 80px;
 }
 
 /* HERO */
@@ -257,9 +256,49 @@ footer .footer-container {
   height: 24px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2rem;
+/* Responsivo */
+@media (max-width: 992px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .logo {
+    height: 8rem; /* um pouco menor no tablet */
+  }
+
+  nav h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 6.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.3rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
   }
 }
